@@ -114,3 +114,7 @@ terraform destroy
 ![Sceenshot the binary of the code running](service_running.png)
 
 ![Sceenshot the service code response](responses.png)
+
+## Later I discovered that kubernetes_manifest resource of the kubernetes provider has a prerequirement of connection to kubernetes cluster which is not possible in this case as the cluster will be created by terraform itself so migrated to using deployement, service & ingress resource in a subsequent commit.
+
+![Screenshot of kubernetes_manifest docs](kubernetes_manifests_resource.png)

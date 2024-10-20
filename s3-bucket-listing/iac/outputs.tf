@@ -3,9 +3,18 @@ output "cluster_status" {
   value       = module.eks.cluster_status
 }
 
+output "cluster_id" {
+  value = module.eks.cluster_id
+}
+
 output "cluster_endpoint" {
   description = "Endpoint for EKS control plane"
   value       = module.eks.cluster_endpoint
+}
+
+output "eks_cluster_token" {
+  value = data.aws_eks_cluster_auth.cluster_auth.token
+  sensitive = true
 }
 
 output "cluster_security_group_id" {
