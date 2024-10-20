@@ -80,8 +80,8 @@ sudo groupadd docker; sudo usermod -aG docker $USER; newgrp docker;
 
 Build docker image with tag ttl.sh/s3-listing:24h
 
-cd src  && docker build -t ttl.sh/kvstore:24h . --no-cache
-docker push ttl.sh/kvstore:24h
+cd src  && docker build -t ttl.sh/s3-listing:24h . --no-cache
+docker push ttl.sh/s3-listing:24h
 
 4. Install Terraform
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common

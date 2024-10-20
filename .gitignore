@@ -16,3 +16,9 @@ src/s3-listing
 
 # aws cli install directory
 aws
+
+# Terraform files
+terraform.tfstate
+terraform.tfstate.backup
+.terraform
+.terraform.lock.hcl

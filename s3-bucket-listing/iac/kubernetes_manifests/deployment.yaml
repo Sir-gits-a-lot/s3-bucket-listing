@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: s3-listing-deployment
+  namespace: default
   labels:
     app: s3-listing
 spec:
@@ -16,9 +17,9 @@ spec:
     spec:
       containers:
       - name: s3-listing
-        image: ttl.sh/s3-listing:20h
+        image: ttl.sh/s3-listing:24h
         ports:
-        - containerPort: 8010
+        - containerPort: 5000
         resources:
           limits:
             memory: "128Mi"

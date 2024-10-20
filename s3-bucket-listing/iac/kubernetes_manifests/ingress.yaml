@@ -16,4 +16,4 @@ spec:
           service:
             name: s3-listing
             port:
-              number: 8010
+              number: 5000
